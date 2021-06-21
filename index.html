@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Aqui va informacion pero no visible dentro del navegador -->
 <title>Document</title>    
-<style>
-    body{
-        background-color: #fffbf7;
-    }
 
-    h1{
-        color: 46484c;
-        text-align: center;
-    }
-
-    p{
-        color: #8b8b8bcc;
-        font-family: verdana;
-        font-size: 20px;
-    }
-
-    button{
-        color: #fff;
-        background-color: #025157;
-    }
-</style>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+    
+    <header class="header">
+        <!-- Contenido del header -->
+        <!-- Logo con link a la pagina principal -->
+        <a href="/" class="logo">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha" />
+        </a>
+        <!-- Menu de navegacion -->
+        <nav class="navbar">
+            <ul>
+                <li class="menu-item">Platform</li>
+                <li class="menu-item">Pricing</li>
+                <li class="menu-item">Customers</li>
+                <li class="menu-item">Resources</li>
+                <li class="menu-item">About</li>
+            </ul>
+        </nav>
+        <!-- Contenedor de acciones de usuario -->
+        <div class="actions">
+            <a href="/login">Sign In</a>
+            <button>Start free trial</button>
+        </div>
+    </header>
+
     <!-- Esto es lo que se vera en el navegador web -->
-    <h1>Build your blog. Build your business 1.</h1>
-    <h2>Build your blog. Build your business 2.</h2>
-    <h3>Build your blog. Build your business 3.</h3>
-    <h4>Build your blog. Build your business 4.</h4>
-    <h5>Build your blog. Build your business 5.</h5>
-    <h6>Build your blog. Build your business 6.</h6>
+    <h1>Mi etiqueta 1</h1>
+    <h2>Mi etiqueta 2</h2>
+    <h3>Mi etiqueta 3</h3>
+    <h4>Mi etiqueta 4</h4>
+    <h5>Mi etiqueta 5</h5>
+    <h6>Mi etiqueta 6</h6>
     <!-- Usando un parrafo -->
     <p>
         <b>Lorem ipsum dolor </b>sit amet, consectetur adipiscing elit. Pellentesque maximus dictum erat id posuere. Quisque accumsan quis dui ut mollis. Vivamus faucibus risus lacus. Phasellus a mattis eros. Aenean commodo neque a nunc sodales, et eleifend ex sodales. Quisque cursus varius ex, quis interdum purus posuere vel. Phasellus tristique efficitur metus bibendum tincidunt. Vivamus id convallis dui, eu dapibus ante. Pellentesque ut mauris eget massa scelerisque suscipit condimentum sed arcu. Vestibulum dignissim aliquam nisl porta tristique. Ut blandit urna vel ante vulputate, vel eleifend velit vestibulum. Fusce id pulvinar mi. Integer fringilla commodo tortor porta congue. Donec sapien ipsum, pretium quis facilisis sed, ullamcorper sed massa.
@@ -55,9 +63,7 @@
         <input type="email" id="email" name="email" placeholder="Correo"><br><br>
         <input type="password" id="password" name="password" placeholder="Contrasena"><br><br>
         <button type="submit">Enviar</button><br>
-
-        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
-
     </form>
+    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
 </body>
 </html>
