@@ -1,6 +1,15 @@
-body{
-    background-color: #47daf4;
-    background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f49e47;
+    /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');*/
+    font-family: "Open Sans", sans-serif;
 }
 
 h1{
@@ -8,25 +17,38 @@ h1{
     text-align: center;
 }
 
-p{
+.post-1 {
     color: #8b8b8bcc;
     font-family: verdana;
-    font-size: 20px;
+    margin-top: 20px;
 }
 
-button{
-    color: #fff;
+button {
     background-color: #025157;
+    color: #fff;
 }
-    
-.header{
+
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
+main{
+    margin-top: 285px;
+    text-align: center;
+}
+
+.header {
     margin: 40px 20px 0 20px;
     font-size: 0;
     height: 45px;
     font-family: sans-serif;
 }
 
-.header > *{
+.header > * {
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
@@ -46,14 +68,13 @@ li{
     height: 100%;
 }
 
-.navbar{
+.navbar {
     width: 70%;
     text-align: center;
-    color: #025157;
-    font-weight: 500;   
+    color: #025157;   
 }
 
-.menu-item{
+.menu-item {
     display: inline;
     margin-right: 25px;
     margin-left: 25px;
@@ -61,12 +82,11 @@ li{
 
 .actions{
     width: 15%;
-    text-align: left;
+    text-align: right;
     font-size: 14px;
-    font-weight: 600;
 }
 
-.actions > *{
+.actions > * {
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -86,60 +106,230 @@ li{
     border-radius: 5px;
 }
 
-.promo{
+.promo {
     display: flex;
     width: 70%;
     margin: 100px auto;
     align-items: center;
 }
 
-.publish{
-    margin: 100px 25px;
+.explanatory-video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.publish h3{
-    font-family: "alegreya", serif;
+.explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.publish {
+    flex: 1;
+}
+
+.publish .Pub-to {
+    font-family: "Alegreya", serif;
     font-size: 40px;
     line-height: 48px;
     color: #025157;
 }
 
-.publish > p {
+.publish > .post-2 {
     font-size: 16px;
     color: #343434;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.publish > form{
+.publish > form {
     display: flex;
 }
 
-.publish > form p{
+.publish > form p {
     color: #025157;
     margin-right: 18px;
 }
 
-.explanatory-video{
+.features{
+    display: grid;
+    /*grid-template-columns: 300px 300px;*/
+    /* grid-template-columns: repeat(2, 300px);*/
+    /* grid-template-columns: 500px 1fr;*/
+    /*grid-template-columns: 1fr 1fr;*/
+
+    /*RETO 3.1*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
+
+    /*RETO 3.2*/
+    grid-template: repeat(3, 330px) / repeat(2, 1fr);
+}
+
+.feature-art{
+    background-color: lightcyan;
+    margin: 10px;
+    width: 40%;
+    height: 50px;
+}
+
+.sCase{
+    background-color: #a1d683;
+    padding: 5% 15%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sCase .grow {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.sCase .grow .Grow-e{
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.sCase .grow .post-3{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #343434;
+    /*display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;*/
+}
+
+.post-3{
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+
+.sCase .grow .but-1{
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.sCase .grow img{
+    width: 500px;
+    max-width: 100%;
+}
+
+figure{
+    margin: 0 0 1rem;
+    margin-top: 32px;
+}
+
+.sCase .stories{
+    flex: 1;
+}
+
+.carousel-in {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sCase .stories .card{
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.sCase .stories .card .card-m img{
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sCase .stories .card .card-m figure{
+    margin-top: 0;
+}
+
+.sCase .stories .card .card-m {
+    position: relative;
+}
+
+.sCase .stories .card .card-m .company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.explanatory-video img{
-    width: 120px;
-    margin-top: 10px;
+.sCase .stories .card .card-m .company img{
+    max-width: 75%;
 }
 
-.fixed-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fffbf7;
+.sCase .stories .card .card-b,
+.sCase .stories .card .card-f{
+    padding: 25px;
+} 
+
+.sCase .stories .card .card-b h4{
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
 }
 
-main{
-    margin-top: 285px;
-    text-align: center;
+.sCase .stories .card .card-b h3{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.sCase .stories .card .card-b .results{
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.sCase .stories .card .card-b .results img{
+    width: 26px;
+    margin-right: 20px;
+}
+
+.sCase .stories .card .card-b .results p{
+    margin-top: 0;
+}
+
+.sCase .stories .card .card-f{
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+
+.sCase .stories .card .card-f button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
 }

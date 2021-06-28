@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Aqui va informacion pero no visible dentro del navegador -->
-<title>Document</title>    
-
+    <title>Document</title>    
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -36,17 +36,20 @@
         </header>
     </section>
 
-    <!-- Esto es lo que se vera en el navegador web -->
-    <h1>Mi etiqueta 1</h1>
-    <h2>Mi etiqueta 2</h2>
-    <h3>Mi etiqueta 3</h3>
-    <h4>Mi etiqueta 4</h4>
-    <h5>Mi etiqueta 5</h5>
-    <h6>Mi etiqueta 6</h6>
-    <!-- Usando un parrafo -->
-    <p>
-        <b>Lorem ipsum dolor </b>sit amet, consectetur adipiscing elit. Pellentesque maximus dictum erat id posuere. Quisque accumsan quis dui ut mollis. Vivamus faucibus risus lacus. Phasellus a mattis eros. Aenean commodo neque a nunc sodales, et eleifend ex sodales. Quisque cursus varius ex, quis interdum purus posuere vel. Phasellus tristique efficitur metus bibendum tincidunt. Vivamus id convallis dui, eu dapibus ante. Pellentesque ut mauris eget massa scelerisque suscipit condimentum sed arcu. Vestibulum dignissim aliquam nisl porta tristique. Ut blandit urna vel ante vulputate, vel eleifend velit vestibulum. Fusce id pulvinar mi. Integer fringilla commodo tortor porta congue. Donec sapien ipsum, pretium quis facilisis sed, ullamcorper sed massa.
-    </p>
+        <main>
+            <!-- Esto es lo que se vera en el navegador web -->
+        <h1>Mi etiqueta 1</h1>
+        <h2>Mi etiqueta 2</h2>
+        <h3>Mi etiqueta 3</h3>
+        <h4>Mi etiqueta 4</h4>
+        <h5>Mi etiqueta 5</h5>
+        <h6>Mi etiqueta 6</h6>
+        <!-- Usando un parrafo -->
+        <p class="post-1">
+            <b>Mi etiqueta</b> parrafo
+        </p>
+
+        </main>
 
     <!-- <input type="text" /> 
     <input type="email" />
@@ -56,6 +59,7 @@
             Try it now &rarr;
         </button>
     </form> -->
+
     <form>
         <label for="name">Nombre</label>
         <input type="text" id="name" name="fname"><br><br>
@@ -65,11 +69,13 @@
         <input type="password" id="password" name="password" placeholder="Contrasena"><br><br>
         <button type="submit">Enviar</button><br>
     </form>
-    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
+    
+    <img alt="Logo de matcha" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
 
     <section class="promo">
+
         <article class="explanatory-video">
-            <video width="600" height="400" controls poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+            <video controls poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
             <source
                 type="video/webm"
                 src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
@@ -77,23 +83,84 @@
             <source
                 type="video/mp4"
                 src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"/>
-                </video>
-                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="See how it works" />
+            </video>
+                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="See how it works" />                
         </article>
     
     <article class="publish">
-        <h3>Publish to your blog in minutes, not hours</h3>
-        <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience.<br> But you don't have hours to create contect that may or may not work.<br> With Matcha, instantly publish from our library of 10,000+ professionally written<br> articles and build your email list faster with our powerful conversion tool.</p>
+        <h3 class="Pub-to">Publish to your blog in minutes, not hours</h3>
+        <p class="post-2">Your blog is your most powerful asset to build, engage, and retain a loyal
+        audience. But you don't have hours to create contect that may or may not
+        work. With Matcha, instantly publish from our library of 10,000+
+        professionally written articles and build your email list faster with our
+        powerful conversion tool.</p>
 
-    <form>
-        <p>Start publishing today:</p>
         <div>
-            <input type="text" placeholder="Enter email">
-            <button>Start My trial</button><br>
+           <p>Start publishing today:</p>
+        <form>
+            <input type="text" placeholder="Enter email"/>
+            <button> Start My trial</button><br>
+        </form>
         </div>
-    </form>
-  </article>
+    </article>
   
-</section>
+    </section>
+
+    <section class="sCase">
+
+        <article class="grow">
+            <h2 class="Grow-e">Growing ecommerce brands rely on Matcha.</h2>
+            <p class="post-3">Are you tired of wasting time publishing blog articles
+                to only see a trickle of traffic and no impact on sales? Join hundred of businesss owners and
+                ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.
+            </p>
+                    <button class="but-1">Who Uses Matcha?</button>
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands">
+                    </figure>
+        </article>
+
+        <article class="stories">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-in">
+                    <div class="carousel-itm">
+                        <div class="card">
+                            <div class="card-m">
+                                <figure>
+                                    <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="Everly worker">
+                                </figure>
+                                <div class="company">
+                                    <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt="Everly">
+                                </div>
+                            </div>
+                                <div class="card-b">
+                                    <h4>Everly</h4>
+                                    <h3>
+                                        " Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20% "
+                                    </h3>
+                                    <div class="results">
+                                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png" alt="Cart icon">
+                                        <p>22% of monthly revenue influenced by content</p>
+                                    </div>
+                                </div>
+                                <div class="card-f">
+                                    <button>See Case Study</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="features">
+        <article class="feature-art">Caracteristica 1</article>
+        <article class="feature-art">Caracteristica 2</article>
+        <article class="feature-art">Caracteristica 3</article>
+        <article class="feature-art">Caracteristica 4</article>
+    </section>
+
 </body>
+
 </html>
